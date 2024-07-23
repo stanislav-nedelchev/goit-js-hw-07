@@ -12,3 +12,195 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* ========== Task-1 ==========*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background-color: #f6f6fe;
+}
+
+.item h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+}
+
+.item ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  height: 40px;
+  border: 1px solid #2e2f42;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* ========== Task-2 ==========*/
+.gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.gallery li {
+  width: calc((100% - 2 * 20px) / 3);
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 232/155;
+  object-fit: cover;
+}
+
+/* ========== Task-3 ==========*/
+
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+/* ========== Task-4 ==========*/
+
+form {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 50px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #2e2f42;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+
+/* ========== Task-5 ==========*/
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background-color: #fff;
+}
+
+.widget p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget button {
+  width: 148px;
+}
+
+/* ========== Task-6 ==========*/
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #e5e5f4;
+  padding: 32px;
+  max-width: 486px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background-color: #e5e5f4;
+}
